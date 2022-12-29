@@ -19,7 +19,7 @@
     <!-- lagu end -->
     <!-- popup start -->
     <div class="d-none">
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="klikmodal">Launch demo modal</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="klikmodal">Launch Demo</button>
     </div>
     <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen">
@@ -31,11 +31,11 @@
               </div>
               <div class="col-md-6 col-12 my-md-auto">
                 Pernikahan dari
-                <h1 class="font-dancing fs-60">Lala & Kresno</h1>
-                <p>Minggu, 15 Januari 2023</p>
+                <h1 class="font-dancing fs-60">Nabila & Kresno</h1>
+                <p>Minggu, 29 Januari 2023</p>
                 <hr class="border-secondary w-50 mx-auto" />
                 <p class="mb-1">Kepada Bapak/Ibu/Saudara/i</p>
-                <p class="mb-1"><span id="nama"></span> <span id="bk"></span></p>
+                <p class="mb-1"><?php echo $_GET['kepada']; ?></span></p>
                 <p class="mb-2">di Tempat</p>
                 <button type="button" class="btn bg-berem btn-outline-secondary text-white rounded-4" data-bs-dismiss="modal" onclick="playAudio()">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart-fill mb-1" viewBox="0 0 16 16">
@@ -63,8 +63,8 @@
             </div>
             <div class="col-12 mt-5">
               Pernikahan dari
-              <h1 class="font-dancing fs-60">Lala & Kresno</h1>
-              <p>Minggu, 15 Januari 2023</p>
+              <h1 class="font-dancing fs-60">Nabila & Kresno</h1>
+              <p>Minggu, 29 Januari 2023</p>
             </div>
             <div class="col-12">
               <div class="row justify-content-center">
@@ -150,7 +150,7 @@
             <img src="img/lala1.png" class="rounded-circle shadow-lg border-white mb-3" alt="" width="200px" />
             <h1 class="font-dancing text-dark fs-45">Nabila Az Zahra Ramadhani</h1>
             <p class="m-0 p-0">Putri Kedua</p>
-            <p class="m-0 p-0">Bapak Imat & Ibu Ika</p>
+            <p class="m-0 p-0">Bapak Imat Ruhimat & Ibu Ika Tarmika Dewi</p>
           </div>
           <div class="col-md-2 col-12 m-md-auto my-5" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="600">
             <h1 class="m-0 p-0 font-dancing">&</h1>
@@ -159,7 +159,7 @@
             <img src="img/kresno1.png" class="rounded-circle shadow-lg border-white mb-3" alt="" width="200px" />
             <h1 class="font-dancing text-dark fs-45">Kresno Satrio Kuncoro Zito</h1>
             <p class="m-0 p-0">Putra Pertama</p>
-            <p class="m-0 p-0">(Alm.) Bapak Rudjito Kamu & Ibu Dede </p>
+            <p class="m-0 p-0">(Alm.) Bapak Rudjito & Ibu Dede Masitoh</p>
           </div>
         </div>
       </div>
@@ -209,10 +209,10 @@
           </div>
           <div class="col-md-12 col-12 py-3" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="500">
             <div class="card p-3 shadow bg-fee">
-              <h1 class="font-dancing mb-3 fs-40">Akad Nikah</h1>
-              <p class="fw-bold p-0 m-0">Minggu, 15 Agustus 2023</p>
-              <p class="m-0 p-0">Pukul 08.00 WIB</p>
-              <p class="m-0 p-0">Jawa Barat, Indonesia</p>
+              <h1 class="font-dancing mb-3 fs-40">Akad Nikah & Ramah Tamah</h1>
+              <p class="fw-bold p-0 m-0">Minggu, 29 Agustus 2023</p>
+              <p class="m-0 p-0">Pukul 08.00 - 12.00 WIB</p>
+              <p class="m-0 p-0">Kab. Kuningan, Jawa Barat, Indonesia</p>
             </div>
           </div>
           <div class="col-12 py-3" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="1000">
@@ -274,6 +274,41 @@
       ></path>
     </svg>
     <!-- akad end -->
+    <!-- Ucapan start -->
+    <section class="bg-wakwak">
+      <div class="container py-5">
+        <div class="row text-center justify-content-center">
+          <div class="col-12 mb-5" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="2250">
+            <h1 class="font-dancing fs-40">Wishes</h1>
+            <p class="p-0 m-0">Doa Restu Anda merupakan karunia</p>
+            <p class="p-0 m-0">yang sangat berarti bagi kami.</p>
+          </div>
+          <div class="col-md-10 col-12 mx-2" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="2500">
+            <div class="card bg-fee rounded-3 p-3">
+              <form action="" method="post">
+                <div class="mb-3">
+                  <input type="text" name="nama" placeholder="Nama" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                  <textarea name="ucapan" placeholder="Ucapan" rows="4" class="form-control" required></textarea>
+                </div>
+                <div class="mb-3">
+                  <select name="konfirmasi" class="form-select" required>
+                    <option disabled selected>Konfirmasi Kehadiran</option>
+                    <option value="Hadir">Hadir</option>
+                    <option value="Tidak Hadir">Tidak Hadir</option>
+                  </select>
+                </div>
+                <div class="mb-3 text-start">
+                  <button type="submit" class="btn bg-berem btn-outline-secondary text-white">Kirim</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Ucapan end -->
     <!-- amplop start -->
     <section class="bg-wakwak">
       <div class="container py-5">
@@ -360,41 +395,6 @@
       </div>
     </section>
     <!-- protokol end -->
-    <!-- Ucapan start -->
-    <section class="bg-wakwak">
-      <div class="container py-5">
-        <div class="row text-center justify-content-center">
-          <div class="col-12 mb-5" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="2250">
-            <h1 class="font-dancing fs-40">Wishes</h1>
-            <p class="p-0 m-0">Doa Restu Anda merupakan karunia</p>
-            <p class="p-0 m-0">yang sangat berarti bagi kami.</p>
-          </div>
-          <div class="col-md-10 col-12 mx-2" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="2500">
-            <div class="card bg-fee rounded-3 p-3">
-              <form action="" method="post">
-                <div class="mb-3">
-                  <input type="text" name="nama" placeholder="Nama" class="form-control" required />
-                </div>
-                <div class="mb-3">
-                  <textarea name="ucapan" placeholder="Ucapan" rows="4" class="form-control" required></textarea>
-                </div>
-                <div class="mb-3">
-                  <select name="konfirmasi" class="form-select" required>
-                    <option disabled selected>Konfirmasi Kehadiran</option>
-                    <option value="Hadir">Hadir</option>
-                    <option value="Tidak Hadir">Tidak Hadir</option>
-                  </select>
-                </div>
-                <div class="mb-3 text-start">
-                  <button type="submit" class="btn bg-berem btn-outline-secondary text-white">Kirim</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Ucapan end -->
     <!-- salam start -->
     <section class="bg-wakwak">
       <div class="container py-5">
@@ -407,7 +407,7 @@
               <h5 class="mb-5">Wassalamualaikum Wr. Wb.</h5>
             </div>
             <div data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="1250">
-              <h1 class="font-dancing fs-60">Lala</h1>
+              <h1 class="font-dancing fs-60">Nabila</h1>
               <h1 class="font-dancing fs-60">&</h1>
               <h1 class="font-dancing fs-60">Kresno</h1>
             </div>
