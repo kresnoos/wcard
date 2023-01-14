@@ -1,3 +1,6 @@
+<?php
+$url =  $_SERVER["REQUEST_URI"];
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,7 +38,7 @@
                 <p>Minggu, 29 Januari 2023</p>
                 <hr class="border-secondary w-50 mx-auto" />
                 <p class="mb-1">Kepada Bapak/Ibu/Saudara/i</p>
-                <p class="mb-1"><?php echo $_GET['kepada']; ?></span></p>
+                <p class="mb-1"><?php echo $url; ?></span></p>
                 <p class="mb-2">di Tempat</p>
                 <button type="button" class="btn bg-berem btn-outline-secondary text-white rounded-4" data-bs-dismiss="modal" onclick="playAudio()">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart-fill mb-1" viewBox="0 0 16 16">
